@@ -1,12 +1,44 @@
-export const sample = {
+export type ItemStatus = "backlog" | "active" | "blocked" | "ready" | "done";
+
+export type WorkItem = {
+  id: string;
+  title: string;
+  category: string;
+  owner: string;
+  status: ItemStatus;
+  priority: number;
+  effort: number;
+  friction: number;
+  value: number;
+  due: string;
+  notes: string;
+};
+
+export type QualityCheck = {
+  id: string;
+  label: string;
+  passed: boolean;
+  weight: number;
+};
+
+export const sample: {
+  repoName: string;
+  title: string;
+  subtitle: string;
+  serviceLine: string;
+  description: string;
+  repositoryUrl: string;
+  liveDemoUrl: string;
+  theme: { accent: string; accent2: string; ink: string; soft: string; warm: string };
+  items: WorkItem[];
+  checks: QualityCheck[];
+  deliverables: string[];
+} = {
   "repoName": "foxhen-service-pricing-calculator",
   "title": "Service Pricing Calculator",
-  "subtitle": "Scope-to-quote configurator",
+  "subtitle": "quote configurator",
   "serviceLine": "Pricing and quote design",
-  "heroTitle": "Configure a fixed-fee offer with visible tradeoffs.",
-  "heroCopy": "A fictional pricing calculator that turns service scope, turnaround, complexity, and add-ons into a transparent estimate and delivery plan.",
-  "primaryAction": "Calculate quote",
-  "secondaryAction": "Compare tiers",
+  "description": "Configure fixed-fee service packages with complexity, turnaround, add-ons, and acceptance criteria.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-service-pricing-calculator",
   "liveDemoUrl": "https://foxhen-service-pricing-calculator.vercel.app",
   "theme": {
@@ -14,115 +46,124 @@ export const sample = {
     "accent2": "#65b88c",
     "ink": "#150d07",
     "soft": "#f7efe7",
-    "warm": "#e7fff2",
-    "surface": "#fffaf4",
-    "muted": "#5c667a",
-    "border": "rgba(7, 18, 31, 0.12)"
+    "warm": "#e7fff2"
   },
-  "metrics": [
+  "items": [
     {
-      "label": "Quote scenarios",
-      "value": "12",
-      "note": "saved examples"
-    },
-    {
-      "label": "Scope clarity",
-      "value": "95%",
-      "note": "+29 pts"
-    },
-    {
-      "label": "Margin guardrail",
-      "value": "Good",
-      "note": "time boxed"
-    }
-  ],
-  "stages": [
-    {
-      "label": "Scope",
-      "detail": "Define desired outcome, assets available, complexity, and excluded work.",
-      "status": "ready",
-      "owner": "Sales",
-      "index": 1
-    },
-    {
-      "label": "Price",
-      "detail": "Apply effort bands, rush factor, uncertainty, and fixed-fee floor.",
-      "status": "active",
-      "owner": "Studio",
-      "index": 2
-    },
-    {
-      "label": "Options",
-      "detail": "Compare good, better, and best packages without scope creep.",
-      "status": "waiting",
-      "owner": "Buyer",
-      "index": 3
-    },
-    {
-      "label": "Handoff",
-      "detail": "Create quote notes, assumptions, and acceptance criteria.",
-      "status": "queued",
-      "owner": "Ops",
-      "index": 4
-    }
-  ],
-  "workItems": [
-    {
+      "id": "ser-1",
       "title": "Base package",
-      "detail": "One-day cleanup estimate",
-      "status": "ready"
+      "category": "Intake",
+      "owner": "Chris",
+      "status": "active",
+      "priority": 5,
+      "effort": 2,
+      "friction": 1,
+      "value": 5,
+      "due": "Today",
+      "notes": "Sample quote configurator work item for pricing and quote design."
     },
     {
+      "id": "ser-2",
       "title": "Rush option",
-      "detail": "48-hour build with handoff",
-      "status": "active"
+      "category": "Build",
+      "owner": "Fox & Hen",
+      "status": "backlog",
+      "priority": 4,
+      "effort": 4,
+      "friction": 2,
+      "value": 4,
+      "due": "24h",
+      "notes": "Sample quote configurator work item for pricing and quote design."
     },
     {
-      "title": "Addon rules",
-      "detail": "Waiting on service menu",
-      "status": "waiting"
+      "id": "ser-3",
+      "title": "Addon rule",
+      "category": "Review",
+      "owner": "Buyer",
+      "status": "blocked",
+      "priority": 3,
+      "effort": 3,
+      "friction": 4,
+      "value": 4,
+      "due": "48h",
+      "notes": "Sample quote configurator work item for pricing and quote design."
     },
     {
+      "id": "ser-4",
+      "title": "Complexity tier",
+      "category": "Export",
+      "owner": "Automation",
+      "status": "ready",
+      "priority": 4,
+      "effort": 2,
+      "friction": 2,
+      "value": 3,
+      "due": "This week",
+      "notes": "Sample quote configurator work item for pricing and quote design."
+    },
+    {
+      "id": "ser-5",
+      "title": "Margin check",
+      "category": "Intake",
+      "owner": "QA",
+      "status": "backlog",
+      "priority": 2,
+      "effort": 1,
+      "friction": 1,
+      "value": 3,
+      "due": "Waiting",
+      "notes": "Sample quote configurator work item for pricing and quote design."
+    },
+    {
+      "id": "ser-6",
       "title": "Quote memo",
-      "detail": "Queued for export",
-      "status": "queued"
+      "category": "Build",
+      "owner": "Chris",
+      "status": "done",
+      "priority": 5,
+      "effort": 5,
+      "friction": 3,
+      "value": 5,
+      "due": "Next pass",
+      "notes": "Sample quote configurator work item for pricing and quote design."
+    }
+  ],
+  "checks": [
+    {
+      "id": "payer",
+      "label": "Payer or owner is clear",
+      "passed": true,
+      "weight": 18
+    },
+    {
+      "id": "deliverable",
+      "label": "Deliverable has acceptance criteria",
+      "passed": true,
+      "weight": 18
+    },
+    {
+      "id": "friction",
+      "label": "Account/access friction is documented",
+      "passed": false,
+      "weight": 14
+    },
+    {
+      "id": "handoff",
+      "label": "Handoff package is generated",
+      "passed": false,
+      "weight": 16
+    },
+    {
+      "id": "reuse",
+      "label": "Repeatable pipeline note exists",
+      "passed": true,
+      "weight": 12
     }
   ],
   "deliverables": [
-    {
-      "title": "Estimator",
-      "detail": "Interactive knobs for size, complexity, speed, and add-ons."
-    },
-    {
-      "title": "Tier comparison",
-      "detail": "A clean view of what changes between packages."
-    },
-    {
-      "title": "Quote memo",
-      "detail": "Assumptions and acceptance checks that reduce disputes."
-    }
-  ],
-  "timeline": [
-    {
-      "time": "0-1 hr",
-      "detail": "Map offer components and effort bands"
-    },
-    {
-      "time": "1-5 hrs",
-      "detail": "Build calculator and tier logic"
-    },
-    {
-      "time": "5-8 hrs",
-      "detail": "QA edge cases and write handoff"
-    }
-  ],
-  "proof": [
-    "Useful for Fox & Hen service packaging and Upwork fixed-price offers.",
-    "Shows business logic, not just UI polish.",
-    "All pricing data is fictional sample material."
+    "Ranked board",
+    "Editable item inspector",
+    "Readiness checklist",
+    "Exportable handoff report"
   ]
-} as const;
-
-export type StageStatus = "ready" | "active" | "waiting" | "queued";
-export type DemoStage = (typeof sample.stages)[number];
-export type WorkItem = (typeof sample.workItems)[number];
+};

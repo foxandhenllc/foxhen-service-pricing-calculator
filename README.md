@@ -1,6 +1,6 @@
 # Service Pricing Calculator
 
-Public Fox & Hen portfolio sample for **Pricing and quote design**.
+Public Fox & Hen working sample for **Pricing and quote design**.
 
 ![Demo screenshot](docs/demo-screenshot.png)
 
@@ -9,18 +9,13 @@ Public Fox & Hen portfolio sample for **Pricing and quote design**.
 - Demo: [https://foxhen-service-pricing-calculator.vercel.app](https://foxhen-service-pricing-calculator.vercel.app)
 - Repository: [https://github.com/foxandhenllc/foxhen-service-pricing-calculator](https://github.com/foxandhenllc/foxhen-service-pricing-calculator)
 
-## What This Demonstrates
+## Fully Working Behaviors
 
-- Useful for Fox & Hen service packaging and Upwork fixed-price offers.
-- Shows business logic, not just UI polish.
-- All pricing data is fictional sample material.
-
-## Interactions To Try
-
-- Click through the workflow stage cards.
-- Adjust the sprint-intensity range control.
-- Toggle scope, QA, handoff, and reuse checks to change the readiness score.
-- Review the handoff package and timeline sections.
+- Search, filter, and sort the sample work board.
+- Add a new sample item and edit owner, notes, priority, value, effort, and friction.
+- Advance work status and watch readiness metrics update.
+- Run the 24-hour sprint simulation to reprioritize high-value items.
+- Toggle QA gates, generate a handoff report, and download the current board as JSON.
 
 ## Local Run
 
@@ -32,4 +27,4 @@ npm run build
 
 ## Public-Safe Scope
 
-This is a static React/Vite demo with fictional sample data. It includes no production data, credentials, real contacts, or copied customer work. It is intended to show Fox & Hen's workflow, product judgment, and delivery style for fast fixed-scope service work.
+This is a static React/Vite demo with fictional sample data. It includes no production data, credentials, real contacts, copied customer work, backend, auth, or external service calls.
