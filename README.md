@@ -1,6 +1,6 @@
 # Service Pricing Calculator
 
-Public Fox & Hen working sample for **Pricing and quote design**.
+Service pricing calculator for packages, add-ons, rush fees, complexity, assumptions, and quote summaries.
 
 ![Demo screenshot](docs/demo-screenshot.png)
 
@@ -8,6 +8,10 @@ Public Fox & Hen working sample for **Pricing and quote design**.
 
 - Demo: [https://foxhen-service-pricing-calculator.vercel.app](https://foxhen-service-pricing-calculator.vercel.app)
 - Repository: [https://github.com/foxandhenllc/foxhen-service-pricing-calculator](https://github.com/foxandhenllc/foxhen-service-pricing-calculator)
+
+## Purpose
+
+Service pricing calculator for packages, add-ons, rush fees, complexity, assumptions, and quote summaries.
 
 ## Fully Working Behaviors
 
@@ -19,7 +23,7 @@ Public Fox & Hen working sample for **Pricing and quote design**.
 
 ## Service Mapping
 
-This demo packages a lightweight pricing and quote design workflow around:
+This repo packages a focused, public-safe workflow around:
 
 - Ranked board
 - Editable item inspector

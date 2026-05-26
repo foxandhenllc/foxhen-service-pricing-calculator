@@ -21,5 +21,17 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "Service pricing calculator for packages, add-ons, rush fees, complexity, assumptions, and quote summaries.",
+  "homepage": "https://foxhen-service-pricing-calculator.vercel.app",
+  "keywords": [
+    "pricing",
+    "calculator",
+    "quotes",
+    "agency-tools",
+    "react",
+    "typescript",
+    "vite",
+    "small-business"
+  ]
 }
