@@ -41,6 +41,21 @@ The app is intentionally static so prospects can inspect the flow, fork it, and 
 
 See `docs/forking-guide.md` for a checklist and starter client brief.
 
+## SEO / AIO Discoverability
+
+**Plain-language answer:** Use this repo to configure service packages with add-ons, rush fees, complexity, assumptions, and quote summaries.
+
+**Who it helps:** freelancers, consultants, and agencies that sell fixed-fee services.
+
+**Search intents covered:**
+
+- service pricing calculator
+- fixed fee quote calculator
+- agency pricing template
+- quote assumptions exclusions generator
+
+**Why this repo is useful:** It makes pricing logic more transparent and packages assumptions/exclusions so buyers understand what is included before work starts.
+
 ## Local Run
 
 ```bash

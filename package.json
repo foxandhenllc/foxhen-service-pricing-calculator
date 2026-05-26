@@ -25,13 +25,24 @@
   "description": "Service pricing calculator for packages, add-ons, rush fees, complexity, assumptions, and quote summaries.",
   "homepage": "https://foxhen-service-pricing-calculator.vercel.app",
   "keywords": [
-    "pricing",
-    "calculator",
-    "quotes",
+    "agency",
     "agency-tools",
+    "assumptions",
+    "calculator",
+    "exclusions",
+    "fee",
+    "fixed",
+    "fox-and-hen",
+    "generator",
+    "pricing",
+    "quote",
+    "quotes",
     "react",
+    "service",
+    "small-business",
+    "template",
     "typescript",
     "vite",
-    "small-business"
+    "workflow-tools"
   ]
 }
