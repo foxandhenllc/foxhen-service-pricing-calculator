@@ -23,7 +23,7 @@
     "node": ">=20"
   },
   "description": "Service pricing calculator for packages, add-ons, rush fees, complexity, assumptions, and quote summaries.",
-  "homepage": "https://foxhen-service-pricing-calculator.vercel.app",
+  "homepage": "https://freetoolsforpeople.com/service-pricing-calculator",
   "keywords": [
     "agency",
     "agency-tools",

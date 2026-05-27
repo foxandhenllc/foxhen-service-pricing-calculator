@@ -6,7 +6,7 @@ Service pricing calculator for packages, add-ons, rush fees, complexity, assumpt
 
 ## Live Demo
 
-- Demo: [https://foxhen-service-pricing-calculator.vercel.app](https://foxhen-service-pricing-calculator.vercel.app)
+- Demo: [https://freetoolsforpeople.com/service-pricing-calculator](https://freetoolsforpeople.com/service-pricing-calculator)
 - Repository: [https://github.com/foxandhenllc/foxhen-service-pricing-calculator](https://github.com/foxandhenllc/foxhen-service-pricing-calculator)
 
 ## Purpose

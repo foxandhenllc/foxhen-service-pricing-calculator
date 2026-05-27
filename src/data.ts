@@ -40,7 +40,7 @@ export const sample: {
   "serviceLine": "Pricing and quote design",
   "description": "Configure fixed-fee service packages with complexity, turnaround, add-ons, and acceptance criteria.",
   "repositoryUrl": "https://github.com/foxandhenllc/foxhen-service-pricing-calculator",
-  "liveDemoUrl": "https://foxhen-service-pricing-calculator.vercel.app",
+  "liveDemoUrl": "https://freetoolsforpeople.com/service-pricing-calculator",
   "theme": {
     "accent": "#654834",
     "accent2": "#65b88c",
